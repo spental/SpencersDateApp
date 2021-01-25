@@ -20,6 +20,6 @@ JHU Coding Bootcamp-Project 1 (Anthony, Jackie, Kyle, Nick)
  ![emailpage](./Assets/images/4.png)
 # Links
 ### Link to GitHub
-- https://github.com/nvandenberge/Project-1
+https://spental.github.io/SpencersDateApp/
 ### Link to Application
-- https://nvandenberge.github.io/Project-1/
+- https://spental.github.io/SpencersDateApp/
