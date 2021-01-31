@@ -1,6 +1,14 @@
+#padd {
+    border: black;
+    border-width: 3px;
+    border-style: solid;
+    background-color: #2492a1;
+}
+
+
 body {
     font-family: "Courier New", Courier, monospace;
-    background-color: #56bda2;
+    /* background-color: #56bda2; */
     color: #0b0e29;
     padding: 100px;
     text-align: center;
@@ -11,6 +19,9 @@ body {
 
 main {
     flex: 1 0 auto;
+    border: black;
+    border-width: 3px;
+    border-style: solid;
 }
 
 .materialize-text {

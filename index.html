@@ -7,26 +7,48 @@
     <link rel="stylesheet" href="Assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <title>Let's Plan a Day!</title>
 </head>
 
 <body>
-    <main>
-        <div class="container">
-            <h1>Let's Plan a Day!</h1>
-            <div class="row">
-                <form class="col s12">
-                    <div class="row">
-                        <p id="inputError"></p>
-                        <div class="input-field col s12">
-                            <input id="zipInput" class="materialize-text" placeholder="Enter Zip Code" type="number"></input>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="/index.html">Kyle Spencer Talbott</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <a class="nav-link" href="index.html">About Me</a>
+                <a class="nav-link" href="Portfolio.html">Portfolio </a>
+                <a class="nav-link" href="Contact.html">Contact</a>
+                <a class="nav-link" href="https://spental.github.io/weather-Dash/">Weather Dashboard</a>
+                <a class="nav-link" href="https://spental.github.io/DayPlanner/">Daily Planner</a>
+                <a class="nav-link" href="https://spental.github.io/SpencersDateApp/">Random Date Generator</a>
+            </ul>
+        </div>
+    </nav>
+    <main id="padd">
+        <div id="body">
+            <div class="container">
+                <h1>Let's Plan a Day!</h1>
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <p id="inputError"></p>
+                            <div class="input-field col s12">
+                                <input id="zipInput" class="materialize-text" placeholder="Enter Zip Code" type="number"></input>
+                                <button class="btn waves-effect waves-light" type="submit" id="searchBtn">Let's Go!
+                                    <i class="material-icons right">perm_contact_calendar</i>
+                                </button>
+                            </div>
+                           
                         </div>
-                        <button class="btn waves-effect waves-light" type="submit" id="searchBtn">Let's Go!
-                        <i class="material-icons right">perm_contact_calendar</i>
-                    </button>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </main>

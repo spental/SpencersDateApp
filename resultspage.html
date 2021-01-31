@@ -13,11 +13,30 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
     <link rel="stylesheet" href="Assets/css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </head>
 
   <body>
-    <main>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a class="navbar-brand" href="/index.html">Kyle Spencer Talbott</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+              <a class="nav-link" href="index.html">About Me</a>
+              <a class="nav-link" href="Portfolio.html">Portfolio </a>
+              <a class="nav-link" href="Contact.html">Contact</a>
+              <a class="nav-link" href="https://spental.github.io/weather-Dash/">Weather Dashboard</a>
+              <a class="nav-link" href="https://spental.github.io/DayPlanner/">Daily Planner</a>
+              <a class="nav-link" href="https://spental.github.io/SpencersDateApp/">Random Date Generator</a>
+          </ul>
+      </div>
+  </nav>
+    <main id="padd">
       <div class="container">
         <div id="choicesHeader">Your Choices!</div>
         <div class="row">
@@ -47,44 +66,45 @@
             <div id="eventTickets"></div>
             <div id="eventBtnHolder"></div>
           </div>
+          <footer class="page-footer">
+            <div class="container">
+              <a
+                class="waves-effect waves-light btn modal-trigger"
+                href="#modal1"
+                id="emailBtn"
+              >
+                <i class="material-icons right">email</i>Email my results
+              </a>
+              <a href="index.html" class="waves-effect waves-light btn" id="loopBtn">
+                <i class="small material-icons right">loop</i>Let's try again</a
+              >
+            </div>
+          </footer>
+          <!-- Modal for emailing results -->
+          <div id="modal1" class="modal modal-fixed-footer">
+            <div class="modal-content">
+              <h4>Email My Choices:</h4>
+              <div><strong>Food </strong><span id="foodChoice"></span></div>
+              <br>
+              <div id="eventChoiceInfo"><strong>Event </strong><span id="eventChoice"></span></div>
+              <br>
+              <form>
+                <input class="materialize-text" placeholder="Enter Email" type="email" id="emailInput"></input>
+                <br>
+                <button class="btn waves-effect waves-light" type="submit" id="sendBtn">Send
+              </form>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+                >Close</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </main>
 
-    <footer class="page-footer">
-      <div class="container">
-        <a
-          class="waves-effect waves-light btn modal-trigger"
-          href="#modal1"
-          id="emailBtn"
-        >
-          <i class="material-icons right">email</i>Email my results
-        </a>
-        <a href="index.html" class="waves-effect waves-light btn" id="loopBtn">
-          <i class="small material-icons right">loop</i>Let's try again</a
-        >
-      </div>
-    </footer>
-    <!-- Modal for emailing results -->
-    <div id="modal1" class="modal modal-fixed-footer">
-      <div class="modal-content">
-        <h4>Email My Choices:</h4>
-        <div><strong>Food </strong><span id="foodChoice"></span></div>
-        <br>
-        <div id="eventChoiceInfo"><strong>Event </strong><span id="eventChoice"></span></div>
-        <br>
-        <form>
-          <input class="materialize-text" placeholder="Enter Email" type="email" id="emailInput"></input>
-          <br>
-          <button class="btn waves-effect waves-light" type="submit" id="sendBtn">Send
-        </form>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat"
-          >Close</a
-        >
-      </div>
-    </div>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
